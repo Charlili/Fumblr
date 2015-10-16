@@ -1,0 +1,27 @@
+<h1><span>Registreer</span></h1>
+<a href="#home" class="terug">terug</a>
+<p class="fieldset">Logingegevens</p>
+<form class="register" action="" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+    <input type="text" name="username" placeholder="username" class="username-input default-input" />
+    <span class="empty error-username"></span>
+
+    <input type="text" name="email" placeholder="e-mailadres" class="email-input default-input"/>
+        <span class="empty error-email"></span>
+
+    <input type="password" name="password" placeholder="wachtwoord" class="password-input default-input" />
+    <span class="empty error-pass"></span>
+
+	<div class="photo-upload">
+	    <input accept="image/*;capture=camera" type="file" name="photo" placeholder="photo" class="photo-input" value=""/>
+		<div class="preview-cont"></div>
+	</div>
+
+	<div class="photo-p-div">
+		<p class="photo-p">Je afbeelding mag niet groter zijn dan 5MB.</p>
+ 		<span class="empty error-photo"></span>
+	</div>
+
+
+
+    <input type="submit" class="submit register-submit button" value="Registreer"/>
+  </form>

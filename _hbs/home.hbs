@@ -1,0 +1,35 @@
+<header>
+	<h1>Fumblr</h1>
+	<h2>Fumble and bumble your way to inspiration.
+		<a href="#me" class="h2-button hide">See your collection.</a>
+	</h2>
+	<a href="" class='hide button login'>Log in</a>
+	<a href="#register" class='hide button register'>Register</a>
+	<a href="" class='button logout hide'>Log out</a>
+
+	<form class="login-form" action="" method="post" accept-charset="utf-8">
+		<input type="text" name="email" placeholder="email@voorbeeld.be" class="email-input default-input"  value=""/>
+		<span class="empty error-email"></span>
+		<input type="password" name="password" placeholder="paswoord" class="password-input default-input" value=""/>
+		 <span class="empty error-pass"></span>
+
+		</select>
+		<input type="submit" class="login-submit button" value="Inloggen"/>
+	</form>
+</header>
+<ul id='content' class='collection'>
+</ul>
+<footer>
+	<img class = 'user-img hide' alt='profile picture' src='' title='That\'s you!'/>
+	<p class='user-p hide'></p>
+	<label for="filter"> Filter:
+    <select name="filter" class="filter-select">
+      <option value="none">show all</option>
+      <option value="quote">quotes</option>
+      <option value="image">images</option>
+    </select>
+  </label>
+  <input type="text" name="search" value="" placeholder="search for..." class="search-input">
+  <a href='#post' class='upload button' alt='post' title='click here to post!'>Post</a>
+  
+</footer>

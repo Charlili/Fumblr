@@ -1,0 +1,437 @@
+@import "compass/reset";
+@import "compass/css3";
+
+@import "fonts";
+
+$green: #62D15E;
+
+body{
+	line-height: 1;
+	font-size: 62.5%;
+	font-family: ColabLig;
+	background: url('../assets/bg.png') repeat;
+}
+
+footer {
+	position: fixed;
+	z-index: 3;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(255,255,255,.8);
+	height: 50px;
+	vertical-align: bottom;
+	padding: 16px 20px 0 20px;
+	/* box-sizing: content-box; */
+	margin: 0 auto;
+	text-align: center;
+	vertical-align: bottom;
+
+	.upload{
+		bottom: 2px;
+		position: absolute;
+		right: 0;
+	}
+
+	.user-p {
+		position: absolute;
+		bottom: 16px;
+		left: 59px;
+		color: $green;
+		font-size: 1.6em;
+	}
+	.user-img {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.empty{
+	color: #ed564d;
+	font-size: 2.2em;
+	//margin-bottom: 4px;
+	//font-family: aleobold, aleoregular, sans-serif;
+	text-align: center;
+}
+
+.hide{
+	display: none !important;
+}
+
+.error{
+	display: block;
+	border-color: #ed564d;
+}
+
+header{
+
+	margin: 7px auto 5px;
+	width: 100%;
+	text-align: center;
+
+	h1{
+		font-family: Pacifico;
+		font-size: 5.0em;
+		margin-bottom: 11px;
+	}
+	h2{
+		//font-family: ColabLig;
+		color: $green;
+		font-size: 2.0em;
+		margin-bottom: 20px;
+	}
+	.h2-button{
+		display: block;
+		background: #62D15E;
+		width: 200px;
+		padding: 7px 7px;
+		margin: 7px auto;
+		font-size: 0.8em;
+	}
+	.login-form{
+		//position: absolute;
+		z-index: 2;
+		margin-top: 15px;
+		display: block;
+		height: 0;
+		overflow: hidden;
+		transition: height .5s;
+		font-size: 0.5em;
+
+
+		.default-input {
+			width: 33%;
+			height: 40px;
+			
+			margin: 5px auto;
+		}
+	}
+
+	.show{
+		height: 128px;
+	}
+
+	.logout{
+		position: absolute;
+		right: 0;
+		top: 0;
+		display: block;
+	}
+}
+.button{
+	background: $green;
+	padding: 9px 21px;
+	margin: 7px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	color: white;
+}
+*{
+	box-sizing: border-box;
+}
+.upload-container {
+	text-align: center;
+}
+
+a{
+	color: white;
+	opacity: .8;
+	&:link{
+		text-decoration: none;
+	}
+	&:hover{
+		color:white;
+		opacity: 1;
+	}
+}
+
+span{
+	display: none;
+}
+
+div,ul,li{
+	display:block;
+	//font-size: 1.2em;
+}
+
+.container{
+	font-size: 1.2em;
+	margin: 0 auto;
+	display: block;
+  	position: relative;
+  	//width: 1024px;
+  	//height: 7332px;
+}
+
+.post, .col{
+	overflow:hidden;
+	background-color: rgba(250,250,250,.9);
+	min-height: 150px;
+	padding: 2% 2% 40px;
+	color: #888888;
+	font-size: 2.0em;
+	text-transform: italic;
+	position: relative;
+	display: inline-block;
+	//float:left;
+	margin: 1% 0 1% 1.6%;
+
+	img{
+		display: block;
+		width: 100%;
+	}
+
+}
+
+.span_1_of_3,.post {
+	//width: 31.26%;
+	width: 100%; 
+}
+
+.quote{
+	color: black;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 30px;
+	margin-bottom: 44px;
+}
+.quote img{
+	width: 92px;
+	height: 78px;
+	opacity: .5;
+	z-index: -1;
+	position: absolute;
+	right: 10px;
+	
+}
+.quote img:first-child{
+	transform: scaleX(-1);
+	top: 10px;
+	left: 10px;
+}
+
+.author{
+	text-align: right;
+	position: relative;
+	right: 10px;
+	top: 43px;
+	color: grey;
+}
+
+.info{
+	color: white;
+	height: 0;
+	width: 100%;
+	background-color: rgba(98, 209, 94, 0.9);
+	overflow: hidden;
+	transition: height .2s;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	//padding: 5%;
+
+}
+
+
+.icon{
+	float: right;
+	margin: 12px;
+	margin-left: -6px;
+}
+.description{
+	margin: 13px;
+	font-size: 0.8em;
+	position: absolute;
+	bottom: 0;
+	
+}
+.description:first-letter{
+	text-transform: capitalize;
+}
+
+
+.post:hover .info{
+	height: 100%;
+	
+}
+
+//REGISTER
+form{
+	
+	max-width: 640px;
+	margin: 24px auto;
+
+	.button{
+		margin: 7px auto;
+		display: block;
+		&:focus{
+			outline: none;
+		}
+		border: none;
+	}
+
+	div{
+		float: left;
+	}
+}
+.terug{
+	background-color: $green;
+	font-size: 1.6em;
+	color: #fff;
+	letter-spacing: 1px;
+	padding: 11px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	width: 86px;
+
+}
+.fieldset{
+	color: $green;
+	font-size: 2.6em;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.default-input{
+	display: block;
+	margin: 14px auto;
+	color: #626262;
+	font-family: inherit;
+	width: 100%;
+	height: 68px;
+	padding: 10px;
+	font-size: 2.5em;
+	border: 3px solid #c2c2c2;
+	@include border-radius(5px);
+	&:focus{
+		border-color: #949494;
+		outline: none;
+	}
+}
+
+textarea{
+	height: auto !important;
+}
+
+.center{
+	width: 640px;
+	height: 400px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.photo-input{
+	-moz-appearance: none; 
+	-o-appearance: none; 
+	-webkit-appearance: none; 
+	   position:absolute;
+	   height: 219px;
+	   opacity:0; 
+}
+.photo-p-div{
+	font-size: 1.5em;
+	margin: 50px 0px 190px 80px;
+
+}
+.photo-upload{
+		 position:relative;
+		    display:inline-block;    
+		    border:#ebebeb solid 1px;
+		    width:214px;
+		    height: 214px; 
+		    //padding: 4px 6px 4px 8px;
+		    font: normal 14px Myriad Pro, Verdana, Geneva, sans-serif;
+		    color: #7f7f7f;
+		    z-index: 1;
+		    margin: 20px auto;
+		    background:white;
+		    background-size: 214px 214px;
+		    background-image: url('../assets/upload-photo.png');
+	}
+
+	.photo-preview{
+		position: relative;
+		z-index: 2;
+		width: 216px;
+	}
+
+	.preview-cont{
+		width: 216px;
+		height: 216px;
+		margin-left: 240px;
+		margin-top: 0;
+		overflow: hidden;
+		position: absolute;
+	}
+
+
+//FLUID SHIZZLE
+
+.section, .collection {
+	column-count: 3;
+	-webkit-column-count: 3;
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+
+.group:before,
+.group:after,
+.collection:before,
+.collection:after {
+    content:"";
+    display:table;
+}
+.group:after,
+.collection:after{
+    clear:both;
+}
+.group,
+.collection {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+@media only screen and (max-width: 750px) {
+	.col,.post { 
+		margin: 2% 0 2% 0%;
+	}
+	.collection {
+		column-count: 1;
+		-webkit-column-count: 1;
+	}
+	.span_1_of_3,.post {
+		width: 100%;
+	}
+	.photo-p-div {
+		  margin: 110px 0px 20px 20px;
+	}
+
+	.info {
+		height: auto;
+		top: 17px;
+		position: relative;
+	}
+	body {
+		font-size: 80%;
+	}
+}
+
+//check for ipad screen and remove hover-functionality
+@media only screen and (max-device-width: 1024px) {
+	.info {
+		height: auto;
+		top: 17px;
+		position: relative;
+	}
+}

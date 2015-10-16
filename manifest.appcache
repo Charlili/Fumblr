@@ -1,0 +1,19 @@
+CACHE MANIFEST
+# v98
+
+CACHE:
+index.html
+css/screen.css
+js/vendor/jquery.min.js
+js/vendor/underscore.min.js
+js/vendor/backbone.min.js
+js/vendor/handlebars.min.js
+js/vendor/fallback.min.js
+js/init.js
+js/app.js
+uploads/
+
+FALLBACK:
+
+NETWORK:
+*

@@ -1,0 +1,45 @@
+<h1><span>Make post</span></h1>
+<a href="#home" class="terug">terug</a>
+<p class="fieldset">Make post</p>
+<a href='' alt='quote' class='choose button' title='Click to make a quote post' >quote</a>
+<a href='' alt='image' class='choose button' title='Click to make a image post' >image</a>
+<form class="img-upload hide" action="img-upload" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+
+	<div class="photo-upload">
+	    <input accept="image/*;capture=camera" type="file" name="photo" placeholder="photo" class="photo-input" value=""/>
+		<div class="preview-cont"></div>
+	</div>
+
+	<div class="photo-p-div">
+		<p class="photo-p">Je afbeelding mag niet groter zijn dan 5MB.</p>
+ 		<span class="empty error-photo"></span>
+	</div>
+
+	<input type="text" name="url" placeholder="or paste url here" class="url-input default-input" />
+    <span class="empty error-url"></span>
+
+	<label>Description: 
+		<textarea name="description" rows="4" cols="50" class="description-input default-input"></textarea>
+		<span class="empty error-description"></span>
+	</label>
+
+    <input type="submit" class="submit upload-submit button" value="Post!"/>
+</form>
+<form class="quote-upload" action="quote-upload" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+	
+	<label>Quote: 
+		<textarea name="quote" rows="4" cols="50" class="quote-input default-input"></textarea>
+		<span class="empty error-quote"></span>
+	</label>
+	<label>by 
+		<input type="text" name="author" placeholder="author" class="author-input default-input" />
+	    <span class="empty error-author"></span>
+    </label>
+
+	<label>Description: 
+		<textarea  name="description" rows="4" cols="50" class="description-input default-input"></textarea>
+		<span class="empty error-description"></span>
+	</label>
+
+    <input type="submit" class="submit upload-submit button" value="Post!"/>
+</form>
